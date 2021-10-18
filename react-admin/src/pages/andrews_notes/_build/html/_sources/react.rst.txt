@@ -1,0 +1,67 @@
+React
+=====
+
+Wut do
+######
+
+Start a React app
+-----------------
+This command creates a basic build process for creating a SPA react app.
+
+.. code-block::
+
+    npx create-react-app my-app-name
+
+Theory & Concepts
+#################
+
+It's a Library
+--------------
+* Used for composing UI's from components.
+* Not to be confused with a Framework such as React Native, Angular or VUE.
+* Pure React components are essentially Javascript syntactic sugar
+
+React Component
+---------------
+* Tells React what the client should see (aka Render)
+* A JS function that returns JSX - aka **React Elements**
+* JSX is Reacts syntax for HTML + JS, for example
+
+.. code-block::
+
+    return <h1>{greetings}</h1>
+
+* In order for JSX to compile it must have at least 1 <a> tag
+* The reason JSX is used is because it makes writing React Components easier. For example;
+
+.. code-block::
+
+    <h1> == React.createElement(h1....);
+
+Interactive Component
+^^^^^^^^^^^^^^^^^^^^^
+
+fdsa
+
+Composition
+-----------
+* This is what occurs when a JS Function component contains a react component
+
+Props
+-----
+* Essential parameters or arguments for passing data down into children objects or functions.
+* To me, Props is peculiar in that it will contain functions to modify high level state.
+* Can be left empty, however authoritative sources say it's best to include props argument even when not needed.
+
+State
+-----
+* Every component can have a state
+* this.state should be private to its components
+* It's always a good idea for state to be "lifted up" as much as possible
+
+React Virtual DOM
+_________________
+* A Tree based virtual representation of your DOM.
+* Used for identifying the changes in state from your virtual DOM in comparison to your actual DOM
+* This comparison process is called "Diffing"
+* This procedure is why React is condidered effecient since it **only** updates the changes in DOM
