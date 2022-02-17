@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>React &#8212; andrews_notes  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Andrews Notes!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="react">
+<h1>React<a class="headerlink" href="#react" title="Permalink to this headline">¶</a></h1>
+<section id="wut-do">
+<h2>Wut do<a class="headerlink" href="#wut-do" title="Permalink to this headline">¶</a></h2>
+<section id="start-a-react-app">
+<h3>Start a React app<a class="headerlink" href="#start-a-react-app" title="Permalink to this headline">¶</a></h3>
+<p>This command creates a basic build process for creating a SPA react app.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npx</span> <span class="n">create</span><span class="o">-</span><span class="n">react</span><span class="o">-</span><span class="n">app</span> <span class="n">my</span><span class="o">-</span><span class="n">app</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="theory-concepts">
+<h2>Theory &amp; Concepts<a class="headerlink" href="#theory-concepts" title="Permalink to this headline">¶</a></h2>
+<section id="it-s-a-library">
+<h3>It’s a Library<a class="headerlink" href="#it-s-a-library" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Used for composing UI’s from components.</p></li>
+<li><p>Not to be confused with a Framework such as React Native, Angular or VUE.</p></li>
+<li><p>Pure React components are essentially Javascript syntactic sugar</p></li>
+</ul>
+</section>
+<section id="react-component">
+<h3>React Component<a class="headerlink" href="#react-component" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Tells React what the client should see (aka Render)</p></li>
+<li><p>A JS function that returns JSX - aka <strong>React Elements</strong></p></li>
+<li><p>JSX is Reacts syntax for HTML + JS, for example</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">return</span> <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="p">{</span><span class="n">greetings</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>In order for JSX to compile it must have at least 1 &lt;a&gt; tag</p></li>
+<li><p>The reason JSX is used is because it makes writing React Components easier. For example;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span> <span class="o">==</span> <span class="n">React</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="n">h1</span><span class="o">....</span><span class="p">);</span>
+</pre></div>
+</div>
+<section id="interactive-component">
+<h4>Interactive Component<a class="headerlink" href="#interactive-component" title="Permalink to this headline">¶</a></h4>
+<p>fdsa</p>
+</section>
+</section>
+<section id="composition">
+<h3>Composition<a class="headerlink" href="#composition" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>This is what occurs when a JS Function component contains a react component</p></li>
+</ul>
+</section>
+<section id="props">
+<h3>Props<a class="headerlink" href="#props" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Essential parameters or arguments for passing data down into children objects or functions.</p></li>
+<li><p>To me, Props is peculiar in that it will contain functions to modify high level state.</p></li>
+<li><p>Can be left empty, however authoritative sources say it’s best to include props argument even when not needed.</p></li>
+</ul>
+</section>
+<section id="state">
+<h3>State<a class="headerlink" href="#state" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Every component can have a state</p></li>
+<li><p>this.state should be private to its components</p></li>
+<li><p>It’s always a good idea for state to be “lifted up” as much as possible</p></li>
+</ul>
+<ul class="simple">
+<li><p>A Tree based virtual representation of your DOM.</p></li>
+<li><p>Used for identifying the changes in state from your virtual DOM in comparison to your actual DOM</p></li>
+<li><p>This comparison process is called “Diffing”</p></li>
+<li><p>This procedure is why React is condidered effecient since it <strong>only</strong> updates the changes in DOM</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">andrews_notes</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">React</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wut-do">Wut do</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#start-a-react-app">Start a React app</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#theory-concepts">Theory &amp; Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#it-s-a-library">It’s a Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#react-component">React Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#composition">Composition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#props">Props</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#state">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Andrews Notes!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Andrew Heyer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/react.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
